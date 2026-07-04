@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Venue & Amenities",
-  description: `Explore ${siteConfig.name} party lawn in ${siteConfig.location.city} — capacity for ${siteConfig.capacity} guests with stage, catering, parking, and more.`,
+  description: `Explore ${siteConfig.fullName} in ${siteConfig.location.city} — capacity for ${siteConfig.capacity} guests with stage, catering, parking, and more.`,
 };
 
 export default function VenuePage() {

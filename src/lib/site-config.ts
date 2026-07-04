@@ -1,6 +1,7 @@
 export const siteConfig = {
   name: "Bageecha",
   tagline: "The Party Lawn",
+  fullName: "Bageecha The Party Lawn",
   description:
     "Premium party lawn in Gaya, Bihar for weddings, birthdays, school events, and celebrations. Capacity up to 600 guests.",
   url: "https://bageecha.alfibuilders.com",

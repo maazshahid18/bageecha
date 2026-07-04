@@ -6,7 +6,7 @@ import { buildWhatsAppUrl, getCallUrl } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "Contact & Book",
-  description: `Book ${siteConfig.name} party lawn in ${siteConfig.location.city}. Call ${siteConfig.phone} or send an enquiry.`,
+  description: `Book ${siteConfig.fullName} in ${siteConfig.location.city}. Call ${siteConfig.phone} or send an enquiry.`,
 };
 
 export default function ContactPage() {

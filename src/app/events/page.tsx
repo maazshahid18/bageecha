@@ -7,7 +7,7 @@ import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "Events We Host",
-  description: `Weddings, birthdays, school events & corporate gatherings at ${siteConfig.name} party lawn, ${siteConfig.location.city}.`,
+  description: `Weddings, birthdays, school events & corporate gatherings at ${siteConfig.fullName}, ${siteConfig.location.city}.`,
 };
 
 export default function EventsPage() {

@@ -20,7 +20,7 @@ export function Footer() {
             />
             <div>
               <p className="font-display text-lg font-semibold">{siteConfig.name}</p>
-              <p className="text-xs tracking-widest text-white/70 uppercase">
+              <p className="mt-1 text-xs tracking-widest text-white/70 uppercase">
                 {siteConfig.tagline}
               </p>
             </div>

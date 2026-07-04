@@ -22,9 +22,10 @@ export default function HomePage() {
               Where Every Celebration Blooms
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-foreground/70">
-              {siteConfig.name} is Gaya&apos;s premier party lawn — a lush green venue for weddings,
-              birthdays, school events, and unforgettable gatherings of up to{" "}
-              {siteConfig.capacity} guests.
+              {siteConfig.name}
+              {" is Gaya's premier party lawn — a lush green venue for weddings, birthdays, school events, and unforgettable gatherings of up to "}
+              {siteConfig.capacity}
+              {" guests."}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a

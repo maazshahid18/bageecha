@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline} | ${siteConfig.location.city}, ${siteConfig.location.state}`,
+    default: `${siteConfig.fullName} | ${siteConfig.location.city}, ${siteConfig.location.state}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Alfi Builders",
   ],
   openGraph: {
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: siteConfig.fullName,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,

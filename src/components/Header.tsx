@@ -25,17 +25,17 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.jpg"
-            alt={`${siteConfig.name} ${siteConfig.tagline}`}
+            alt={siteConfig.fullName}
             width={56}
             height={56}
             className="h-12 w-12 object-contain sm:h-14 sm:w-14"
             priority
           />
           <div className="hidden sm:block">
-            <p className="font-display text-lg font-semibold leading-tight text-green-dark">
+            <p className="font-display text-lg font-semibold text-green-dark">
               {siteConfig.name}
             </p>
-            <p className="text-xs font-medium tracking-widest text-blue-navy uppercase">
+            <p className="mt-1 text-xs font-medium tracking-widest text-blue-navy uppercase">
               {siteConfig.tagline}
             </p>
           </div>
