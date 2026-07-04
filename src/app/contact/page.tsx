@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const mapsEmbed = `https://maps.google.com/maps?q=${encodeURIComponent(siteConfig.location.mapsQuery)}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+  const mapsEmbed = `https://maps.google.com/maps?q=${encodeURIComponent(siteConfig.location.mapsQuery)}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <>
@@ -31,9 +31,23 @@ export default function ContactPage() {
               <h3 className="font-display text-lg font-semibold text-blue-navy">
                 Visit Us
               </h3>
-              <p className="mt-2 text-sm text-foreground/70">
-                {siteConfig.location.address}
-              </p>
+              <address className="mt-2 space-y-0.5 text-sm not-italic text-foreground/70">
+                {siteConfig.location.addressLines.map((line) => (
+                  <p key={line}>{line}</p>
+                ))}
+              </address>
+              <a
+                href={siteConfig.location.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 rounded-full bg-blue-navy px-5 py-2 text-sm font-semibold text-white transition hover:bg-blue-primary"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Get Directions
+              </a>
             </div>
 
             <div className="rounded-2xl border border-green-dark/10 bg-white p-6">

@@ -34,9 +34,11 @@ export default function VenuePage() {
                     <dd className="font-display text-xl font-semibold">{stat.value}</dd>
                   </div>
                 ))}
-                <div className="flex items-center justify-between border-b border-white/15 pb-4">
+                <div className="border-b border-white/15 pb-4">
                   <dt className="text-white/75">Location</dt>
-                  <dd className="font-medium">{siteConfig.location.city}, {siteConfig.location.state}</dd>
+                  <dd className="mt-2 text-sm font-medium leading-relaxed">
+                    {siteConfig.location.landmark}, {siteConfig.location.city}
+                  </dd>
                 </div>
               </dl>
             </div>
@@ -48,7 +50,7 @@ export default function VenuePage() {
               <ul className="mt-6 space-y-4 text-sm leading-relaxed text-foreground/70">
                 <li className="flex gap-3">
                   <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-green-light" />
-                  Centrally located in Gaya with easy access for guests travelling from across Bihar.
+                  Located in Professor&apos;s Colony, Gaya — near Sai Temple, with easy access for guests travelling from across Bihar.
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-green-light" />

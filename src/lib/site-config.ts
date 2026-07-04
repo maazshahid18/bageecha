@@ -12,10 +12,21 @@ export const siteConfig = {
   parentCompany: "Alfi Builders",
   parentUrl: "https://alfibuilders.com",
   location: {
-    address: "Gaya, Bihar, India",
+    address:
+      "Mission School Compound, near Sai Temple, Professor's Colony, Gaya, Bihar 823001",
+    addressLines: [
+      "Mission School Compound",
+      "near Sai Temple, Professor's Colony",
+      "Gaya, Bihar 823001",
+    ],
+    landmark: "near Sai Temple, Professor's Colony",
     city: "Gaya",
     state: "Bihar",
-    mapsQuery: "Gaya, Bihar, India",
+    pincode: "823001",
+    mapsQuery:
+      "Mission School Compound, near Sai Temple, Professor's Colony, Gaya, Bihar 823001",
+    mapsUrl:
+      "https://www.google.com/maps/dir/?api=1&destination=Mission+School+Compound,+near+Sai+Temple,+Professor's+Colony,+Gaya,+Bihar+823001",
   },
   social: {
     instagram: "",

@@ -54,7 +54,16 @@ export function Footer() {
         <div>
           <h3 className="font-display text-lg font-semibold">Get in Touch</h3>
           <ul className="mt-4 space-y-3 text-sm text-white/75">
-            <li>{siteConfig.location.address}</li>
+            <li>
+              <a
+                href={siteConfig.location.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-light"
+              >
+                {siteConfig.location.address}
+              </a>
+            </li>
             <li>
               <a href={getCallUrl()} className="hover:text-green-light">
                 +91 {siteConfig.phone}
