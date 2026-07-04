@@ -55,7 +55,6 @@ export function Footer() {
             <li><Link href="/events/" className="hover:text-green-light">Events We Host</Link></li>
             <li><Link href="/gallery/" className="hover:text-green-light">Photo Gallery</Link></li>
             <li><Link href="/contact/" className="hover:text-green-light">Contact & Enquiry</Link></li>
-            <li><Link href="/policies/" className="hover:text-green-light">Booking Policies</Link></li>
           </ul>
         </div>
 
