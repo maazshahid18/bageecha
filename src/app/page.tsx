@@ -58,7 +58,7 @@ export default function HomePage() {
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-green-light/30 to-blue-primary/20 blur-2xl" />
             <div className="relative rounded-3xl bg-white p-8 shadow-xl sm:p-12">
               <Image
-                src="/logo.png"
+                src="/logo.jpg"
                 alt={`${siteConfig.name} logo`}
                 width={400}
                 height={400}

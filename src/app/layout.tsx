@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     locale: "en_IN",
     type: "website",
-    images: [{ url: "/logo.png", width: 800, height: 800, alt: siteConfig.name }],
+    images: [{ url: "/logo.jpg", width: 455, height: 455, alt: siteConfig.name }],
   },
 };
 
