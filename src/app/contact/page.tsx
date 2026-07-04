@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/SectionHeading";
 import { EnquiryForm } from "@/components/EnquiryForm";
-import { AvailabilityCalendar } from "@/components/AvailabilityCalendar";
 import { SocialLinks } from "@/components/SocialLinks";
 import { siteConfig } from "@/lib/site-config";
 import { buildWhatsAppUrl, getCallUrl } from "@/lib/whatsapp";
@@ -23,12 +22,6 @@ export default function ContactPage() {
             title="Let's Plan Your Event"
             description="Reach out for availability, pricing, and custom packages. We typically respond within a few hours."
           />
-        </div>
-      </section>
-
-      <section id="availability" className="bg-cream py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <AvailabilityCalendar />
         </div>
       </section>
 

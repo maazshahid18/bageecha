@@ -132,7 +132,7 @@ export const siteConfig = {
     {
       question: "How do I check availability and book?",
       answer:
-        "Check the availability calendar on our Contact page for open dates, then send your event date, type, and guest count via the enquiry form or WhatsApp. Our team will confirm and share pricing.",
+        "Send us your event date, type, and guest count via the enquiry form or WhatsApp. Our team will confirm availability and share pricing.",
     },
     {
       question: "What are the booking timings?",

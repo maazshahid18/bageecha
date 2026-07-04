@@ -1,9 +1,5 @@
-/**
- * Add Instagram post URLs here (copy from browser after opening a post).
- * Example: "https://www.instagram.com/p/ABC123xyz/"
- * Newest posts first. Push to GitHub to update the gallery feed.
- */
 export const instagramPosts: string[] = [
-  // Add your post URLs here, e.g.:
-  // "https://www.instagram.com/p/XXXXXXXXX/",
+  "https://www.instagram.com/reel/DV2Sc8bE-5W/",
+  "https://www.instagram.com/reel/DOz8nCnEljt/",
+  "https://www.instagram.com/reel/CjbEeu1hcNI/",
 ];
