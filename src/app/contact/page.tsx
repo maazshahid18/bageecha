@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/SectionHeading";
 import { EnquiryForm } from "@/components/EnquiryForm";
+import { SocialLinks } from "@/components/SocialLinks";
 import { siteConfig } from "@/lib/site-config";
 import { buildWhatsAppUrl, getCallUrl } from "@/lib/whatsapp";
 
@@ -79,6 +80,18 @@ export default function ContactPage() {
               >
                 {siteConfig.email}
               </a>
+            </div>
+
+            <div className="rounded-2xl border border-green-dark/10 bg-white p-6">
+              <h3 className="font-display text-lg font-semibold text-blue-navy">
+                Follow Us
+              </h3>
+              <p className="mt-2 text-sm text-foreground/70">
+                See event photos, reels, and updates on our social pages.
+              </p>
+              <div className="mt-4">
+                <SocialLinks />
+              </div>
             </div>
 
             <div className="overflow-hidden rounded-2xl border border-green-dark/10">

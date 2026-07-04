@@ -29,8 +29,8 @@ export const siteConfig = {
       "https://www.google.com/maps/dir/?api=1&destination=Mission+School+Compound,+near+Sai+Temple,+Professor's+Colony,+Gaya,+Bihar+823001",
   },
   social: {
-    instagram: "",
-    facebook: "",
+    facebook: "https://www.facebook.com/bageechathepartylawn/",
+    instagram: "https://www.instagram.com/bageechathepartylawn/",
   },
   stats: [
     { label: "Guest Capacity", value: "600+" },

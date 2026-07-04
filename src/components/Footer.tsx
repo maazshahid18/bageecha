@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { SocialLinks } from "@/components/SocialLinks";
 import { buildWhatsAppUrl, getCallUrl } from "@/lib/whatsapp";
 
 export function Footer() {
@@ -39,6 +40,12 @@ export function Footer() {
               {siteConfig.parentCompany}
             </a>
           </p>
+          <div className="mt-5">
+            <p className="mb-3 text-xs font-medium tracking-widest text-white/50 uppercase">
+              Follow Us
+            </p>
+            <SocialLinks variant="light" />
+          </div>
         </div>
 
         <div>
