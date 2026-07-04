@@ -17,6 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: `${siteConfig.name} — ${siteConfig.tagline} | ${siteConfig.location.city}, ${siteConfig.location.state}`,
     template: `%s | ${siteConfig.name}`,
@@ -37,6 +38,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     locale: "en_IN",
     type: "website",
+    images: [{ url: "/logo.png", width: 800, height: 800, alt: siteConfig.name }],
   },
 };
 
