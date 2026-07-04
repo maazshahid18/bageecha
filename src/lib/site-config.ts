@@ -31,6 +31,13 @@ export const siteConfig = {
   social: {
     facebook: "https://www.facebook.com/bageechathepartylawn/",
     instagram: "https://www.instagram.com/bageechathepartylawn/",
+    instagramHandle: "@bageechathepartylawn",
+  },
+  google: {
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=Mission+School+Compound,+near+Sai+Temple,+Professor's+Colony,+Gaya,+Bihar+823001",
+    reviewUrl:
+      "https://www.google.com/maps/search/?api=1&query=Bageecha+The+Party+Lawn+Gaya+Bihar",
   },
   stats: [
     { label: "Guest Capacity", value: "600+" },
@@ -125,7 +132,7 @@ export const siteConfig = {
     {
       question: "How do I check availability and book?",
       answer:
-        "Send us your event date, type, and guest count via the enquiry form or WhatsApp. Our team will confirm availability and share pricing.",
+        "Check the availability calendar on our Contact page for open dates, then send your event date, type, and guest count via the enquiry form or WhatsApp. Our team will confirm and share pricing.",
     },
     {
       question: "What are the booking timings?",

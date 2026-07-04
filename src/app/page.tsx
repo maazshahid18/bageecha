@@ -6,6 +6,7 @@ import { GalleryGrid } from "@/components/GalleryGrid";
 import { FAQSection } from "@/components/FAQSection";
 import { CTABanner } from "@/components/CTABanner";
 import { EnquiryForm } from "@/components/EnquiryForm";
+import { ReviewsSection } from "@/components/ReviewsSection";
 import { siteConfig } from "@/lib/site-config";
 import { buildWhatsAppUrl, getCallUrl } from "@/lib/whatsapp";
 
@@ -34,10 +35,10 @@ export default function HomePage() {
                 Book on WhatsApp
               </a>
               <Link
-                href="/gallery/"
+                href="/contact/#availability"
                 className="inline-flex items-center justify-center rounded-full border border-green-dark/25 px-8 py-3.5 text-sm font-semibold text-green-dark transition hover:bg-white"
               >
-                View Gallery
+                Check Dates
               </Link>
             </div>
             <div className="mt-10 flex flex-wrap gap-6">
@@ -168,7 +169,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="text-sm text-foreground/60 hover:text-green-dark"
             >
-              More photos on Instagram @bageechathepartylawn
+              More photos on Instagram {siteConfig.social.instagramHandle}
             </a>
           </div>
         </div>
@@ -218,6 +219,19 @@ export default function HomePage() {
               </div>
             </div>
             <EnquiryForm />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cream py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <SectionHeading
+            eyebrow="Reviews"
+            title="What Our Guests Say"
+            description="Families, schools, and businesses trust Bageecha for their most important celebrations."
+          />
+          <div className="mt-12">
+            <ReviewsSection />
           </div>
         </div>
       </section>
