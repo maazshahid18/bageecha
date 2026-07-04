@@ -15,10 +15,7 @@ export default function HomePage() {
       <section className="hero-pattern relative overflow-hidden bg-cream">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
           <div>
-            <p className="text-sm font-semibold tracking-widest text-green-mid uppercase">
-              {siteConfig.location.city}, {siteConfig.location.state}
-            </p>
-            <h1 className="font-display mt-3 text-4xl leading-tight font-semibold text-blue-navy sm:text-5xl lg:text-6xl">
+            <h1 className="font-display text-4xl leading-tight font-semibold text-blue-navy sm:text-5xl lg:text-6xl">
               Where Every Celebration Blooms
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-foreground/70">
