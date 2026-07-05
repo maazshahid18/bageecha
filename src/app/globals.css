@@ -46,3 +46,53 @@ body {
     radial-gradient(circle at 80% 20%, rgba(59, 123, 191, 0.1) 0%, transparent 40%),
     radial-gradient(circle at 60% 80%, rgba(43, 107, 46, 0.12) 0%, transparent 45%);
 }
+
+.mobile-glass-nav {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(245, 249, 244, 0.55) 50%,
+    rgba(255, 255, 255, 0.65) 100%
+  );
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    0 12px 40px rgba(27, 61, 110, 0.14),
+    0 2px 8px rgba(43, 107, 46, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.mobile-glass-nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.55) 0%,
+    transparent 42%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.mobile-nav-active-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  background: rgba(43, 107, 46, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.mobile-nav-fab {
+  transition: transform 0.2s ease;
+}
+
+.mobile-nav-fab:active {
+  transform: scale(0.94);
+}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
@@ -51,8 +52,9 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-28 md:pb-0">{children}</main>
         <Footer />
+        <MobileBottomNav />
         <WhatsAppFloat />
       </body>
     </html>
