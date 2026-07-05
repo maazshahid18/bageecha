@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const navItems = [
@@ -54,10 +55,43 @@ function isActive(pathname: string, href: string) {
 
 export function MobileBottomNav() {
   const pathname = usePathname();
+  const [compact, setCompact] = useState(false);
+  const lastScrollY = useRef(0);
+  const ticking = useRef(false);
+
+  useEffect(() => {
+    lastScrollY.current = window.scrollY;
+
+    const onScroll = () => {
+      if (ticking.current) return;
+
+      ticking.current = true;
+      requestAnimationFrame(() => {
+        const currentY = window.scrollY;
+        const delta = currentY - lastScrollY.current;
+
+        if (currentY < 40) {
+          setCompact(false);
+        } else if (delta > 8) {
+          setCompact(true);
+        } else if (delta < -8) {
+          setCompact(false);
+        }
+
+        lastScrollY.current = currentY;
+        ticking.current = false;
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <nav
-      className="fixed inset-x-0 bottom-0 z-50 md:hidden"
+      className={`mobile-nav-shell fixed inset-x-0 bottom-0 z-50 md:hidden ${
+        compact ? "is-compact" : ""
+      }`}
       aria-label="Mobile navigation"
     >
       <div className="mobile-glass-nav mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] rounded-[1.75rem] px-1.5 py-2">
